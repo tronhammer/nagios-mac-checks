@@ -1,0 +1,3 @@
+#!/usr/bin/env bash 
+echo "MAC OK: Mac looks quite sexy |time=0.001278s" #;;;0.000000;;;0"
+exit 0
