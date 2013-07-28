@@ -1,3 +1,5 @@
 #!/usr/bin/env bash 
-echo "MAC OK: Mac looks quite sexy |time=0.001278s" #;;;0.000000;;;0"
+
+amount_left=`ssh apple@192.168.1.107 "/Users/apple/Sites/nagios-mac-checks/nagios-server free"`
+echo "MAC OK: Mac has $amount_left free in memory! |time=0.001278s" #;;;0.000000;;;0"
 exit 0

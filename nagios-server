@@ -1,0 +1,10 @@
+#!/bin/bash
+action=$1
+
+if [ $action ]
+then 
+	if [ $action = 'free' ]
+	then
+		echo "( (`vm_stat | grep "free" | sed -e 's/\.//g' | xargs | cut -f3 -d' '` + `vm_stat | grep "inactive" | sed -e 's/\.//g' | xargs | cut -f3 -d' '`) / (2^8) )" | bc
+	fi
+fi
